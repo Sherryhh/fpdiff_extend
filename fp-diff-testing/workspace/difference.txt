@@ -1,0 +1,58 @@
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['gsl_sf_beta_inc_DRIVER', 'scipy_special_betainc_DRIVER0']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['mpmath_erfinv_DRIVER0', 'scipy_special_erfinv_DRIVER0']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['mpmath_ellipe_DRIVER0', 'scipy_special_ellipe_DRIVER0']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['mpmath_ellipk_DRIVER0', 'scipy_special_ellipk_DRIVER0']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['gsl_sf_hyperg_1F1_int_DRIVER', 'mpmath_hyp1f1_DRIVER2', 'scipy_cephes_hyp1f1_DRIVER2']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['gsl_sf_bessel_zero_Jnu_DRIVER', 'mpmath_besseljzero_DRIVER1']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['gsl_sf_exp_DRIVER', 'mpmath_exp_DRIVER0']
+    -correct
+Class found in refactor_equivalenceClasses.csv but not in icse_equivalenceClasses.csv : ['gsl_sf_hyperg_2F1_DRIVER', 'mpmath_hyp2f1_DRIVER0', 'scipy_cephes_hyp2f1_DRIVER0']
+    -correct
+
+
+Class found in icse_equivalenceClasses.csv but not in refactor_equivalenceClasses.csv : ['mpmath_gammainc_alt_DRIVER1', 'scipy_special_gammaincc_DRIVER1']
+    -fine since this was incorrect
+Class found in icse_equivalenceClasses.csv but not in refactor_equivalenceClasses.csv : ['gsl_sf_choose_DRIVER', 'scipy_cephes_tklmbda_DRIVER0']
+    -fine since this was incorrect
+Class found in icse_equivalenceClasses.csv but not in refactor_equivalenceClasses.csv : ['gsl_sf_legendre_Q0_DRIVER', 'mpmath_acoth_DRIVER0']
+    -fine since this was incorrect
+Class found in icse_equivalenceClasses.csv but not in refactor_equivalenceClasses.csv : ['gsl_sf_angle_restrict_pos_DRIVER']
+    -fine since this was incorrect
+Class found in icse_equivalenceClasses.csv but not in refactor_equivalenceClasses.csv : ['mpmath_hyp2f1_DRIVER3', 'scipy_cephes_hyp2f1_DRIVER3']
+    -fine since this was redundant
+
+
+
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_zeta_DRIVER', 'mpmath_zeta_DRIVER0']
+                                  icse_equivalenceClasses.csv ['gsl_sf_zeta_DRIVER', 'mpmath_zeta_DRIVER0', 'scipy_sc_zeta_alt_DRIVER0']
+    -correct
+
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_lngamma_DRIVER', 'mpmath_fp_loggamma_DRIVER0', 'scipy_sc_gammaln_DRIVER0']
+                                  icse_equivalenceClasses.csv ['gsl_sf_lngamma_DRIVER', 'mpmath_fp_loggamma_DRIVER0', 'scipy_loggamma_DRIVER0']
+    -correct
+
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_bessel_Jnu_DRIVER', 'mpmath_besselj_DRIVER0', 'scipy_cephes_jv_DRIVER0']
+                                  icse_equivalenceClasses.csv ['gsl_sf_bessel_Jnu_DRIVER', 'mpmath_besselj_DRIVER0', 'scipy_special_jn_DRIVER0']
+    -correct
+
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_bessel_Jn_DRIVER', 'mpmath_besselj_DRIVER1', 'scipy_cephes_jv_DRIVER1']
+                                  icse_equivalenceClasses.csv ['gsl_sf_bessel_Jn_DRIVER', 'mpmath_besselj_DRIVER1', 'scipy_special_jn_DRIVER1']
+    -correct
+    
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_hzeta_DRIVER', 'scipy_sc_zeta_DRIVER0']
+                                  icse_equivalenceClasses.csv ['gsl_sf_hzeta_DRIVER', 'mpmath_zeta_alt_DRIVER0', 'scipy_sc_zeta_DRIVER0']
+    -correct
+
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_legendre_P1_DRIVER', 'mpmath_fp_re_DRIVER0']
+                                  icse_equivalenceClasses.csv ['gsl_sf_angle_restrict_pos_DRIVER', 'gsl_sf_angle_restrict_symm_DRIVER', 'gsl_sf_legendre_P1_DRIVER', 'mpmath_re_DRIVER0']
+    -correct
+
+This class is slightly different: refactor_equivalenceClasses.csv ['gsl_sf_hyperg_0F1_DRIVER', 'mpmath_hyp0f1_DRIVER0', 'scipy_special_hyp0f1_DRIVER0']
+                                  icse_equivalenceClasses.csv ['gsl_sf_hyperg_0F1_DRIVER', 'scipy_special_hyp0f1_DRIVER0']
+    -correct

@@ -1,0 +1,50 @@
+========SETUP========
+
+$docker build -t sp-diff-image .
+$docker run -it --name=sp-diff-container sp-diff-image
+
+
+========RUNNING THE CLASSIFICATION PIPELINE========
+
+(Assuming cwd is /usr/local/src/fp-diff-testing/workspace)
+
+
+1) To extract the function signatures from a directory of developer tests or header files for a library and generate drivers for the extracted functions:
+
+    $python3 driverGenerator.py libraryName /path/to/directory
+
+
+2) To divide the functions into equivalence classes:
+
+    $python3 classify.py
+
+
+========RUNNING TESTS========
+    
+    
+Testing option 1)
+
+To automatically run s3fp across all of the equivalence classes, first specify the desired s3fp settings in 
+spFunDrivers/s3fpDrivers/s3fp_setting. Then, run the following command:
+
+    $python3 s3fpTesting.py
+
+NOTE: with a timeout setting of 100 SVE per test, processing time is about 1 hour. If you would like to have 
+the docker container run the s3fp tests detached from the terminal and in a manner that won't be interrupted 
+by a closed ssh connection, run the following command from the machine (not inside of the container):
+
+    $docker exec sp-diff-container /bin/bash -c "python3 /usr/local/src/fp-diff-testing/workspace/s3fpTesting.py" &
+
+
+Testing option 2) 
+
+To run the functions in each equivalence class over adversarial special value inputs:
+
+    $python3 adversarialTesting.py
+
+
+Testing option 3)
+
+To run the functions in each equivalence class over migrated test inputs:
+
+    $python3 migrationTesting.py
