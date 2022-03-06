@@ -122,7 +122,7 @@ def isConsistent(outputs):
 ''' function to write out a csv file of the results '''
 def writeOutCSVfile(DISCREPANCIES):
 
-    with open("only_auto/diffTestingResults.csv", 'w') as f:
+    with open("diffTestingResults.csv", 'w') as f:
 
         fieldnames = ['discrepancyNo', 'classNo', 'discrepancyCategory', 'inputName', 'inputList', 'libraryName', 'driverName', 'funcName', 'output', 'absErrs', 'relErrs']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -143,7 +143,7 @@ def writeOutCSVfile(DISCREPANCIES):
                                 'absErrs' : discrepancy.get_absErrs(),
                                 'relErrs' : discrepancy.get_relErrs()})
 
-    sort_csv("only_auto/diffTestingResults.csv")
+    sort_csv("diffTestingResults.csv")
 
 
 def getStats(UNIQUE_DISCREPANCIES, ALL_DISCREPANCIES):
@@ -161,7 +161,7 @@ def getStats(UNIQUE_DISCREPANCIES, ALL_DISCREPANCIES):
     for discrepancy in UNIQUE_DISCREPANCIES.values():
         total_discrepancyTally[discrepancy.get_discrepancyCategory()] += 1
 
-    with open("ori/__statistics.txt", 'a') as f:
+    with open("__statistics.txt", 'a') as f:
         f.write("\nspecialValue_discrepancyTally: {}\n".format(list(specialValue_discrepancyTally.values())))
         f.write("testMigration_discrepancyTally: {}\n".format(list(testMigration_discrepancyTally.values())))
         f.write("\nTIMEOUTS: {}\n".format(total_discrepancyTally[1]))

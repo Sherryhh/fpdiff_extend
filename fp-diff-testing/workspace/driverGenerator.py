@@ -13,7 +13,7 @@ from collections import defaultdict
 # set working directory
 WD = os.path.dirname(os.path.abspath(__file__))
 os.chdir(WD)
-d_p = "../AutoRNP/paper_data/testing_results/DEMC/"
+d_p = "../../AutoRNP/experiments/testing_results/DEMC/"
 
 def convert(filename):
     xsl_file = pd.read_excel(d_p+filename, usecols="C")
