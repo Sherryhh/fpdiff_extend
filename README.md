@@ -7,19 +7,21 @@ It includes following parts:
 3) Sample results for references
 
 ## Requirements
-Set up environment with docker 
-$ docker pull ucdavisplse/sp-diff-testing
+* Set up environment with docker 
+     
+     `docker pull ucdavisplse/sp-diff-testing`
 
 ### AutoRNP
 * python 2.7.14. 
 
     You can install it by following commands (on Ubuntu):
     
-    
-        $ sudo add-apt-repository ppa:jonathonf/python-2.7        
-        $ sudo apt-get update        
-        $ sudo apt-get install python2.7
-        $ python --version
+    ```
+        sudo add-apt-repository ppa:jonathonf/python-2.7        
+        sudo apt-get update        
+        sudo apt-get install python2.7
+        python --version
+     ```
 
 * gsl-2.1 
 
@@ -27,7 +29,7 @@ $ docker pull ucdavisplse/sp-diff-testing
 
 
         http://mirrors.ustc.edu.cn/gnu/gsl/
-        $ ./configure | make | make install
+        ./configure | make | make install
 
 * mpfr 3.1.2-1
 
@@ -49,17 +51,20 @@ install the required python package (see details in file "requirements.txt") and
 
 * Install pygsl-2.3.0 (on Ubuntu), and note that gsl must be installed before installing pygsl:
 
-
-        $ python setup.py config
-        $ python setup.py build
-        $ sudo python setup.py install
+```
+        python setup.py config
+        python setup.py build
+        sudo python setup.py install
+```
         
 ### FPDiff
 Environment is satisfied with Docker.
 
 ## Running
 After running docker container: <br>
-$ git clone https://github.com/Sherryhh/fpdiff_extend
-$ cd fpdiff_extend
-$ ./run.sh
+```
+git clone https://github.com/Sherryhh/fpdiff_extend
+cd fpdiff_extend
+./run.sh
+```
 
