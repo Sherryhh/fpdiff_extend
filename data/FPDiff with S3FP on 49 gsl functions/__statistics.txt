@@ -1,0 +1,34 @@
+Generated 150 executable drivers of unique functions from mpmath
+Generated 168 executable drivers of unique functions from scipy
+Generated 190 executable drivers of unique functions from gsl
+
+	TOTAL DRIVER COUNT: 508
+
+Found 68 gsl/mpmath mappings
+Found 6 mpmath/mpmath mappings
+Found 5 gsl/gsl mappings
+Found 45 mpmath/scipy mappings
+Found 64 gsl/scipy mappings
+Found 9 scipy/scipy mappings
+
+	 INTRA-LIBRARY MAPPING COUNT: 20
+	 INTER-LIBRARY MAPPING COUNT: 177
+
+67 functions from mpmath were assigned mappings
+83 functions from gsl were assigned mappings
+65 functions from scipy were assigned mappings
+
+	 TOTAL # OF FUNCS WITH MAPPINGS: 215
+
+
+specialValue_discrepancyTally: [3, 9, 90, 1, 12, 309]
+testMigration_discrepancyTally: [0, 0, 0, 33, 17, 52]
+
+TIMEOUTS: 3
+DOUBLES FROM NAN: 8
+DOUBLES FROM INF: 44
+INACCURACIES: 11
+MIX OF DOUBLES, EXCEPTIONS, SPECIAL VALUES: 15
+MIX OF EXCEPTIONS AND SPECIAL VALUES: 153
+
+	 TOTAL # OF DISCREPANCIES: 234
